@@ -1,4 +1,6 @@
-<!-- includes/footer.php -->
+<?php
+// $base vem do header.php que já foi incluído antes
+?>
 <footer class="footer">
     <div class="container">
         <div class="footer-top">
@@ -8,10 +10,10 @@
             </div>
             <div class="footer-col">
                 <h4>Links Rápidos</h4>
-                <a href="/">Início</a>
-                <a href="/pages/services.php">Serviços</a>
-                <a href="/pages/portfolio.php">Portfólio</a>
-                <a href="/pages/about.php">Sobre Nós</a>
+                <a href="<?= $base ?>/">Início</a>
+                <a href="<?= $base ?>/pages/services.php">Serviços</a>
+                <a href="<?= $base ?>/pages/portfolio.php">Portfólio</a>
+                <a href="<?= $base ?>/pages/about.php">Sobre Nós</a>
             </div>
             <div class="footer-col">
                 <h4>Contato</h4>
@@ -31,7 +33,5 @@
     <i class="fab fa-whatsapp"></i>
 </a>
 
-<!-- Main JS -->
-<script src="/assets/js/main.js"></script>
 </body>
 </html>
