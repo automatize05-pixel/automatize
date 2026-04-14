@@ -76,3 +76,4 @@ $service = isset($services[$service_id]) ? $services[$service_id] : $default;
 </section>
 
 <?php include __DIR__ . '/../includes/footer.php'; ?>
+
