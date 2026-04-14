@@ -1,4 +1,4 @@
-<?php include '../includes/header.php'; ?>
+<?php include __DIR__ . '/../includes/header.php'; ?>
 
 <section class="page-header services-banner">
     <div class="container animate-on-scroll">
@@ -50,4 +50,4 @@
     </div>
 </section>
 
-<?php include '../includes/footer.php'; ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>

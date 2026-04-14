@@ -1,5 +1,5 @@
 <?php 
-include '../includes/header.php'; 
+include __DIR__ . '/../includes/header.php'; 
 
 $service_id = isset($_GET['service']) ? $_GET['service'] : '';
 
@@ -75,4 +75,4 @@ $service = isset($services[$service_id]) ? $services[$service_id] : $default;
     </div>
 </section>
 
-<?php include '../includes/footer.php'; ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>
