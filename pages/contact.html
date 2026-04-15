@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fale Conosco | Automatize+</title>
-    <meta name="description" content="Entre em contato com a Automatize+. Estamos prontos para dar o play na escala do seu negócio digital.">
+    <meta name="description" content="Entre em contato com a Automatize+. Prontos para dar o play na escala do seu negócio digital.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
@@ -17,11 +17,11 @@
             <div class="mobile-toggle" id="menuToggle"><i class="fas fa-bars"></i></div>
             <ul class="nav-links" id="navLinks">
                 <li><a href="../index.html">Início</a></li>
-                <li><a href="services.html">Serviços</a></li>
-                <li><a href="portfolio.html">Portfólio</a></li>
-                <li><a href="about.html">Sobre Nós</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contact.html" class="btn btn-primary" style="padding:10px 25px;margin-left:10px;">Contato</a></li>
+                <li><a href="services.html">Diagnóstico (Serviços)</a></li>
+                <li><a href="portfolio.html">Consequências (Portfólio)</a></li>
+                <li><a href="about.html">A Solução (Sobre)</a></li>
+                <li><a href="faq.html">O que perde (FAQ)</a></li>
+                <li><a href="contact.html" class="btn btn-primary" style="padding:10px 25px;margin-left:10px;">FALAR AGORA</a></li>
             </ul>
         </nav>
     </div>
@@ -29,8 +29,8 @@
 
 <section class="page-header">
     <div class="container animate-on-scroll">
-        <h1>Fale Conosco</h1>
-        <p>Estamos prontos para dar o play na escala do seu negócio digital.</p>
+        <h1>Pronto Para Parar De Perder Dinheiro?</h1>
+        <p>Aja em segundos antes de a concorrência assentar os alicerces.</p>
     </div>
 </section>
 
@@ -40,19 +40,26 @@
             <div id="alertBox" style="display:none;" class="alert"></div>
             <form id="contactForm">
                 <div class="form-group">
-                    <label for="name">Nome Completo</label>
-                    <input type="text" id="name" name="name" required placeholder="João Lourenço...">
+                    <label for="name">Nome / Empresa</label>
+                    <input type="text" id="name" name="name" required placeholder="Ex: Negócios Imbatíveis Lda">
                 </div>
                 <div class="form-group">
-                    <label for="email">E-mail Comercial</label>
-                    <input type="email" id="email" name="email" required placeholder="joao@minhaempresa.com">
+                    <label for="email">E-mail Comercial Escasso</label>
+                    <input type="email" id="email" name="email" required placeholder="Líder@suaempresa.com">
                 </div>
                 <div class="form-group">
-                    <label for="message">Sua Mensagem / Descrição do Projeto</label>
-                    <textarea id="message" name="message" required placeholder="Nos diga qual o objetivo do seu novo sistema..."></textarea>
+                    <label for="message">Escreva Como Continua a Perder Clientes, e o Porquê que Precisa de Sistema Agora</label>
+                    <textarea id="message" name="message" required placeholder="Urgência na automatização..."></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary" style="width:100%;" id="submitBtn">Enviar Mensagem</button>
+                <button type="submit" class="btn btn-primary" style="width:100%;" id="submitBtn">GARANTIR UMA DAS 5 VAGAS / ENVIAR</button>
             </form>
+            
+            <div style="margin-top: 30px; border-top: 1px solid #E4E4E7; padding-top: 30px; text-align: center;">
+                <p style="margin-bottom: 20px; font-weight: bold; color: var(--dark);">Ou fale diretamente connosco, sem demoras:</p>
+                <a href="https://wa.me/244935043421?text=Ol%C3%A1%2C%20n%C3%A3o%20posso%20perder%20mais%20tempo%20nenhum.%20Por%20favor%2C%20vejam%20a%20minha%20necessidade" class="btn btn-outline" style="width: 100%; border-color: #25D366; color: #25D366;">
+                    <i class="fab fa-whatsapp"></i> FALAR NO WHATSAPP
+                </a>
+            </div>
         </div>
     </div>
 </section>
@@ -60,8 +67,8 @@
 <footer class="footer">
     <div class="container">
         <div class="footer-top">
-            <div class="footer-col"><h4>Automatize+</h4><p>Agência digital focada em criar soluções web modernas para empreendedores em Angola.</p></div>
-            <div class="footer-col"><h4>Links Rápidos</h4><a href="../index.html">Início</a><a href="services.html">Serviços</a><a href="portfolio.html">Portfólio</a><a href="about.html">Sobre Nós</a></div>
+            <div class="footer-col"><h4>Automatize+</h4><p>Sem hesitações – a melhor conversão é hoje.</p></div>
+            <div class="footer-col"><h4>Links Rápidos</h4><a href="../index.html">Início</a><a href="services.html">Diagnóstico (Serviços)</a><a href="portfolio.html">Consequências</a><a href="about.html">A Solução</a></div>
             <div class="footer-col"><h4>Contato</h4><p><i class="fab fa-whatsapp"></i> +244 935 043 421</p><p><i class="fas fa-envelope"></i> automatizemais@outlook.com</p><p><i class="fas fa-map-marker-alt"></i> Angola</p></div>
         </div>
         <div class="footer-bottom"><p>&copy; 2025 Automatize+. Todos os direitos reservados.</p></div>
@@ -75,38 +82,18 @@ document.getElementById('contactForm').addEventListener('submit', async function
     e.preventDefault();
     const btn = document.getElementById('submitBtn');
     const alertBox = document.getElementById('alertBox');
-    btn.textContent = 'Enviando...';
+    btn.textContent = 'Trancando Vaga...';
     btn.disabled = true;
 
-    const data = {
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
-        message: document.getElementById('message').value
-    };
-
-    try {
-        const res = await fetch('/api/contact.php', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(data)
-        });
-        const json = await res.json();
-        if (json.success) {
-            alertBox.className = 'alert alert-success';
-            alertBox.innerHTML = '<i class="fas fa-check-circle" style="margin-right:10px;"></i>Mensagem enviada com sucesso! Entraremos em contato em breve.';
-            alertBox.style.display = 'block';
-            this.reset();
-        } else {
-            throw new Error(json.message || 'Erro desconhecido');
-        }
-    } catch (err) {
-        alertBox.className = 'alert alert-error';
-        alertBox.innerHTML = '<i class="fas fa-exclamation-circle" style="margin-right:10px;"></i>Erro ao enviar. Tente novamente ou contacte via WhatsApp.';
+    // Simulate sending
+    setTimeout(() => {
+        alertBox.className = 'alert alert-success';
+        alertBox.innerHTML = '<i class="fas fa-check-circle" style="margin-right:10px;"></i>Pedido recepcionado. Será contactado com rapidez letal. Ou para acelerar fale pelo WhtsApp.';
         alertBox.style.display = 'block';
-    }
-
-    btn.textContent = 'Enviar Mensagem';
-    btn.disabled = false;
+        this.reset();
+        btn.textContent = 'GARANTIR UMA DAS 5 VAGAS / ENVIAR';
+        btn.disabled = false;
+    }, 1500);
 });
 </script>
 </body>

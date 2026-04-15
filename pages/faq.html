@@ -3,10 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ | Automatize+</title>
-    <meta name="description" content="Perguntas frequentes sobre os serviços da Automatize+.">
+    <title>O que Perde (FAQ) | Automatize+</title>
+    <meta name="description" content="Tire dúvidas agora antes que isso lhe custe outra venda.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .faq-item {
+            background:#ffffff;
+            border:1px solid #E4E4E7;
+            margin-bottom:15px;
+            border-radius:6px;
+            overflow:hidden;
+        }
+        .faq-question {
+            padding:20px;
+            font-weight:600;
+            font-size:1.1rem;
+            cursor:pointer;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            color:var(--dark);
+        }
+        .faq-question:hover { color:var(--primary); background:#FAFAFA; }
+        .faq-answer {
+            padding:0 20px 20px;
+            display:none;
+            color:var(--gray-text);
+        }
+        .faq-item.active .faq-answer { display:block; border-top:1px solid #E4E4E7; padding-top:20px;}
+        .faq-item.active .faq-question { color:var(--primary); background:#FAFAFA; }
+    </style>
 </head>
 <body>
 
@@ -17,11 +44,11 @@
             <div class="mobile-toggle" id="menuToggle"><i class="fas fa-bars"></i></div>
             <ul class="nav-links" id="navLinks">
                 <li><a href="../index.html">Início</a></li>
-                <li><a href="services.html">Serviços</a></li>
-                <li><a href="portfolio.html">Portfólio</a></li>
-                <li><a href="about.html">Sobre Nós</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contact.html" class="btn btn-primary" style="padding:10px 25px;margin-left:10px;">Contato</a></li>
+                <li><a href="services.html">Diagnóstico (Serviços)</a></li>
+                <li><a href="portfolio.html">Consequências (Portfólio)</a></li>
+                <li><a href="about.html">A Solução (Sobre)</a></li>
+                <li><a href="faq.html">O que perde (FAQ)</a></li>
+                <li><a href="contact.html" class="btn btn-primary" style="padding:10px 25px;margin-left:10px;">FALAR AGORA</a></li>
             </ul>
         </nav>
     </div>
@@ -29,33 +56,37 @@
 
 <section class="page-header">
     <div class="container animate-on-scroll">
-        <h1>Perguntas Frequentes (FAQ)</h1>
-        <p>Tire suas dúvidas e inicie seu projeto digital com segurança</p>
+        <h1>Perguntas Frequentes (Dificuldades Reais)</h1>
+        <p>A incerteza é o que o paralisa de agir a tempo.</p>
     </div>
 </section>
 
 <section class="section">
     <div class="container">
-        <div class="animate-on-scroll" style="max-width:800px;margin:0 auto;">
-            <div style="margin-bottom:30px;border-bottom:1px solid #E4E4E7;padding-bottom:20px;">
-                <h3 style="margin-bottom:15px;">Quanto tempo demora para criar um site?</h3>
-                <p>Isso depende muito da complexidade, mas um Site Institucional ou Landing Page costuma levar de 1 a 3 semanas para ficar pronto com a máxima qualidade possível.</p>
+        <div style="max-width:800px;margin:0 auto;" class="animate-on-scroll">
+            <div class="faq-item">
+                <div class="faq-question">Isto aplica-se ao meu tipo de negócio? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer"><p>Se precisa de captar clientes sem falhas, sim. Especialmente porque os seus concorrentes mais estruturados não brincam com a aquisição. Negócios focados que implementam o funil automatizado escalam em semanas.</p></div>
             </div>
-            <div style="margin-bottom:30px;border-bottom:1px solid #E4E4E7;padding-bottom:20px;">
-                <h3 style="margin-bottom:15px;">Vocês desenham a experiência do usuário (UI/UX)?</h3>
-                <p>Sim, o UI/UX é o coração de todos os nossos projetos! Nossos designs são modernos, minimalistas e altamente persuasivos, seguindo padrões premiados mundialmente.</p>
+            
+            <div class="faq-item">
+                <div class="faq-question">Quanto custa ter estes sistemas a rodar a meu favor? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer"><p>Catar centavos enquanto deixa a empresa queimar recursos de vendas operando à mão sairá drasticamente mais caro em escassos meses. Contacte para garantir uma das **5 vagas limitadas mensais.**</p></div>
             </div>
-            <div style="margin-bottom:30px;border-bottom:1px solid #E4E4E7;padding-bottom:20px;">
-                <h3 style="margin-bottom:15px;">Como funcionam as Automações de WhatsApp?</h3>
-                <p>Configuramos fluxos conversacionais automáticos (Chatbots) integrados ao seu número comercial. Eles respondem a dúvidas dos clientes e retêm informações de contato (Leads) dia e noite.</p>
+            
+            <div class="faq-item">
+                <div class="faq-question">Eu serei capaz de manusear as automações sozinho? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer"><p>Nós gerimos as turbinas da infraestrutura, enquanto você colhe os ganhos gerados passivamente. Toda a curva técnica cai sobre o nosso colo exclusivo de especialistas, não o seu.</p></div>
             </div>
-            <div style="margin-bottom:30px;border-bottom:1px solid #E4E4E7;padding-bottom:20px;">
-                <h3 style="margin-bottom:15px;">Fazemos manutenção em sistemas existentes?</h3>
-                <p>Geralmente, focamos no desenvolvimento e re-engenharia para entregar arquiteturas escaláveis. Porém, mediante análise prévia, provemos manutenção evolutiva em sistemas e plataformas completas.</p>
+            
+            <div class="faq-item">
+                <div class="faq-question">E se a automatização for demasiado engessada e repelir humanos? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer"><p>A ausência completa de contacto imediato repele mais um humano em desespero comparativamente à fluência acolhedora que construímos via scripts inteligentes que respondem no instante em que ele se decide manifestar.</p></div>
             </div>
-            <div style="text-align:center;margin-top:50px;">
-                <p style="margin-bottom:20px;">Não encontrou respostas para a sua dúvida?</p>
-                <a href="contact.html" class="btn btn-primary">Envie-nos uma Mensagem</a>
+
+            <div class="text-center" style="margin-top: 40px;">
+                <p style="font-weight: bold; margin-bottom: 20px;">Ainda com incertezas? Chame no WhatsApp e destrua essas inseguranças. Não perca lucros pela paralisia.</p>
+                <a href="https://wa.me/244935043421" target="_blank" class="btn btn-primary">FALAR COM A EQUIPA AGORA</a>
             </div>
         </div>
     </div>
@@ -64,14 +95,31 @@
 <footer class="footer">
     <div class="container">
         <div class="footer-top">
-            <div class="footer-col"><h4>Automatize+</h4><p>Agência digital focada em criar soluções web modernas para empreendedores em Angola.</p></div>
-            <div class="footer-col"><h4>Links Rápidos</h4><a href="../index.html">Início</a><a href="services.html">Serviços</a><a href="portfolio.html">Portfólio</a><a href="about.html">Sobre Nós</a></div>
-            <div class="footer-col"><h4>Contato</h4><p><i class="fab fa-whatsapp"></i> +244 935 043 421</p><p><i class="fas fa-envelope"></i> automatizemais@outlook.com</p><p><i class="fas fa-map-marker-alt"></i> Angola</p></div>
+            <div class="footer-col"><h4>Automatize+</h4><p>Sem panos quentes: somos as molas impulsionadoras da conversão.</p></div>
+            <div class="footer-col"><h4>Links Rápidos</h4><a href="../index.html">Início</a><a href="services.html">Diagnóstico (Serviços)</a><a href="faq.html">FAQ</a></div>
+            <div class="footer-col"><h4>Contato</h4><p><i class="fab fa-whatsapp"></i> +244 935 043 421</p><p><i class="fas fa-envelope"></i> automatizemais@outlook.com</p></div>
         </div>
-        <div class="footer-bottom"><p>&copy; 2025 Automatize+. Todos os direitos reservados.</p></div>
+        <div class="footer-bottom"><p>&copy; 2025 Automatize+. Foco em Escala e ROI</p></div>
     </div>
 </footer>
 <a href="https://wa.me/244935043421" target="_blank" class="wa-btn"><i class="fab fa-whatsapp"></i></a>
+
 <script src="../assets/js/main.js"></script>
+<script>
+    document.querySelectorAll('.faq-question').forEach(q => {
+        q.addEventListener('click', () => {
+            const item = q.parentElement;
+            const wasActive = item.classList.contains('active');
+            document.querySelectorAll('.faq-item').forEach(i => {
+                i.classList.remove('active');
+                i.querySelector('i').className = 'fas fa-chevron-down';
+            });
+            if (!wasActive) {
+                item.classList.add('active');
+                q.querySelector('i').className = 'fas fa-chevron-up';
+            }
+        });
+    });
+</script>
 </body>
 </html>
